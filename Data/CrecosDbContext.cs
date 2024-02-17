@@ -5,7 +5,8 @@ namespace CrecosApi.Data
 {
     public class CrecosDbContext : DbContext
     {
-        public CrecosDbContext()
+        public CrecosDbContext(DbContextOptions<CrecosDbContext> options)
+            : base(options)
         {            
         }
 
