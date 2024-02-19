@@ -12,5 +12,7 @@ namespace CrecosApi.Models
         //Clave Foranea
         [ForeignKey(nameof(Cliente))]
         public int ClienteId { get; set; }        
+
+        public Cliente Cliente { get; set; }
     }
 }
